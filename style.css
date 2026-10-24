@@ -83,9 +83,4 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 /* ===== 10. BANNER ===== */
-.banner img{
-  display:block;
-  width:100%;
-  height:clamp(200px,35vw,450px);
-  object-fit:cover;
-}
+.banner img{display:block;width:100%;height:clamp(200px,35vw,450px);object-fit:cover}
