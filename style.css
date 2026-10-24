@@ -69,7 +69,7 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 /* ===== 8. FOOTER ===== */
 .site-footer{background:var(--oxblood);color:var(--cream);padding:3rem 1.5rem;text-align:center}
 .site-footer .name{font-family:var(--font-title);font-size:2rem;letter-spacing:.08em}
-.site-footer p{margin:.4rem auto}
+.site-footer p{margin:.4rem auto;max-width:none}
 .site-footer a{color:var(--rose)}
 
 /* ===== 9. MOBILE ===== */
