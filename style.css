@@ -1,0 +1,83 @@
+/* ===== 1. COLOURS & FONTS (change brand values here) ===== */
+:root{
+  --oxblood:#4C2026;      /* main colour */
+  --burgundy:#6F2435;
+  --rose:#C98F98;
+  --forest:#29483A;
+  --cream:#FFF9F2;
+  --brown:#A97850;
+  --font-title:'EB Garamond',Georgia,serif;
+  --font-text:'Baskerville','Baskerville Old Face','Libre Baskerville',Georgia,serif;
+}
+
+/* ===== 2. BASE ===== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-text);background:var(--cream);color:var(--oxblood);line-height:1.75;font-size:1.05rem}
+h1,h2,h3{font-family:var(--font-title);font-weight:500;line-height:1.15}
+h1{font-size:clamp(2.4rem,6vw,4rem)}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1rem}
+h3{font-size:1.4rem;margin-bottom:.4rem}
+p{max-width:62ch;margin-bottom:1rem}
+a{color:var(--burgundy)}
+img{max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--forest);outline-offset:3px}
+
+/* ===== 3. HEADER & NAVIGATION ===== */
+.site-header{position:sticky;top:0;z-index:10;background:var(--cream);border-bottom:2px solid var(--rose)}
+.nav{max-width:1100px;margin:auto;padding:.6rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.nav .brand img{height:52px;display:block}
+.nav ul{list-style:none;display:flex;gap:1.8rem;align-items:center}
+.nav a{font-family:var(--font-title);font-size:1.2rem;text-decoration:none;color:var(--oxblood);padding:.2rem 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a.active{border-bottom-color:var(--burgundy)}
+.nav a.cta{background:var(--oxblood);color:var(--cream);padding:.45rem 1.2rem;border-radius:2px;border:0}
+.nav a.cta:hover,.nav a.cta.active{background:var(--burgundy)}
+.menu-toggle,.menu-btn{display:none}
+
+/* ===== 4. HERO (home page) ===== */
+.hero{text-align:center;padding:5rem 1.5rem 4rem}
+.hero img{width:min(480px,85%)}
+.hero p{margin:1rem auto 2rem;font-size:1.25rem}
+.btn{display:inline-block;font-family:var(--font-title);font-size:1.2rem;background:var(--oxblood);color:var(--cream);padding:.7rem 1.8rem;text-decoration:none;border-radius:2px;border:0;cursor:pointer}
+.btn:hover{background:var(--burgundy)}
+.btn.alt{background:transparent;color:var(--oxblood);border:2px solid var(--oxblood);margin-left:.6rem}
+.btn.alt:hover{background:var(--oxblood);color:var(--cream)}
+
+/* ===== 5. PAGE SECTIONS ===== */
+.page-title{background:var(--oxblood);color:var(--cream);text-align:center;padding:3.5rem 1.5rem}
+.page-title p{margin:.8rem auto 0;color:var(--rose)}
+section{padding:4rem 1.5rem}
+.wrap{max-width:1100px;margin:auto}
+.band{background:var(--oxblood);color:var(--cream)}
+.band h2,.band a{color:var(--cream)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;margin-top:2rem}
+.card{border-top:4px solid var(--rose);padding-top:1rem}
+.card:nth-child(2){border-color:var(--forest)}
+.card:nth-child(3){border-color:var(--brown)}
+
+/* ===== 6. PDF VIEWER ===== */
+.pdf-box{border:2px solid var(--rose);background:#fff}
+.pdf-box object{display:block;width:100%;height:80vh;min-height:520px}
+.pdf-note{margin-top:1rem}
+
+/* ===== 7. FORMS (reservation & contact) ===== */
+form{display:grid;gap:1.1rem;max-width:560px}
+label{font-family:var(--font-title);font-size:1.15rem;display:grid;gap:.3rem}
+input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxblood);background:#fff;color:var(--oxblood);border-radius:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+
+/* ===== 8. FOOTER ===== */
+.site-footer{background:var(--oxblood);color:var(--cream);padding:3rem 1.5rem;text-align:center}
+.site-footer .name{font-family:var(--font-title);font-size:2rem;letter-spacing:.08em}
+.site-footer p{margin:.4rem auto}
+.site-footer a{color:var(--rose)}
+
+/* ===== 9. MOBILE ===== */
+@media(max-width:780px){
+  .menu-btn{display:block;font-family:var(--font-title);font-size:1.2rem;cursor:pointer;border:2px solid var(--oxblood);padding:.3rem .9rem}
+  .nav{flex-wrap:wrap}
+  .nav ul{display:none;flex-direction:column;align-items:flex-start;gap:.8rem;width:100%;padding:1rem 0}
+  .menu-toggle:checked ~ ul{display:flex}
+  .row{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

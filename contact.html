@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Chlöpfen Restaurant</title>
+  <meta name="description" content="Chlöpfen Restaurant – We would love to hear from you">
+  <link rel="icon" href="images/logo-small.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html"><img src="images/logo-small.png" alt="Chlöpfen – Home"></a>
+      <input type="checkbox" id="menu" class="menu-toggle" aria-label="Open menu">
+      <label for="menu" class="menu-btn">Menu</label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="reservation.html" class="cta">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <h1>Contact</h1>
+      <p>We would love to hear from you</p>
+    </div>
+    <section>
+      <div class="wrap grid">
+        <div>
+          <h2>Find us</h2>
+          <p>Chlöpfen Restaurant<br>Street 1<br>6000 Luzern</p>
+          <p><a href="mailto:info@chloepfen.ch">info@chloepfen.ch</a><br>+41 00 000 00 00</p>
+          <h3>Opening hours</h3>
+          <p>Tue – Sat: 11:00 – 23:00<br>Sun &amp; Mon: closed</p>
+        </div>
+        <form action="mailto:info@chloepfen.ch" method="post" enctype="text/plain">
+          <label>Name <input type="text" name="name" required></label>
+          <label>Email <input type="email" name="email" required></label>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p class="name">Chlöpfen</p>
+    <p>Restaurant</p>
+    <p>Street 1 · 6000 Luzern · <a href="mailto:info@chloepfen.ch">info@chloepfen.ch</a> · +41 00 000 00 00</p>
+    <p>&copy; 2026 Chlöpfen</p>
+  </footer>
+
+</body>
+</html>
