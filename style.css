@@ -84,3 +84,10 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 
 /* ===== 10. BANNER ===== */
 .banner img{display:block;width:100%;height:clamp(200px,35vw,450px);object-fit:cover}
+
+/* ===== EVENTS: THREE PICTURE CARDS ===== */
+.event-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+.event-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:1rem;border-bottom:4px solid var(--rose)}
+.event-card:nth-child(2) img{border-color:var(--forest)}
+.event-card:nth-child(3) img{border-color:var(--brown)}
+.event-card p{margin-bottom:0}
