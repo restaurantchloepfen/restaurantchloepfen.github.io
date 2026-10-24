@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GTC – Chlöpfen Restaurant</title>
+  <link rel="icon" href="images/logo-small.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER: copy your header from contact.html and paste it here -->
+
+  <main>
+    <div class="page-title">
+      <h1>General Terms and Conditions</h1>
+      <p>GTC</p>
+    </div>
+
+    <section>
+      <div class="wrap legal">
+
+        <h2>Provider</h2>
+        <p><strong>Chlöpfen Restaurant</strong><br>
+        Rothenburgstrasse<br>
+        6274 Eschenbach<br>
+        Email: <a href="mailto:info@chloepfen.ch">info@chloepfen.ch</a></p>
+
+        <h2>Scope</h2>
+        <p>Placeholder: who and what these terms apply to. Full text to follow.</p>
+
+        <h2>Reservations</h2>
+        <p>Placeholder: booking, confirmation, changes and cancellation. Full text to follow.</p>
+
+        <h2>Events and barn rental</h2>
+        <p>Placeholder: deposits, prices, cancellation terms and liability for events. Full text to follow.</p>
+
+        <h2>Prices and payment</h2>
+        <p>Placeholder: prices in CHF, payment methods. Full text to follow.</p>
+
+        <h2>Liability</h2>
+        <p>Placeholder. Full text to follow.</p>
+
+        <h2>Applicable law and jurisdiction</h2>
+        <p>Placeholder. Full text to follow.</p>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: copy your footer from contact.html and paste it here -->
+
+</body>
+</html>
