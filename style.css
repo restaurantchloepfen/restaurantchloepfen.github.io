@@ -54,6 +54,8 @@ section{padding:4rem 1.5rem}
 .card{border-top:4px solid var(--rose);padding-top:1rem}
 .card:nth-child(2){border-color:var(--forest)}
 .card:nth-child(3){border-color:var(--brown)}
+.wrap{max-width:1100px;margin:auto}
+.center-text{text-align:center;margin-left:auto;margin-right:auto}
 
 /* ===== 6. PDF VIEWER ===== */
 .pdf-box{border:2px solid var(--rose);background:#fff}
