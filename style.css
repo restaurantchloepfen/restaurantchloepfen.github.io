@@ -99,4 +99,11 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 .split-text h2{text-align:left}
 .split-text p{max-width:none}
 @media(max-width:700px){.split{grid-template-columns:1fr}}
+
+/* ===== PICTURE + TEXT SIDE BY SIDE (Events and Rooms) ===== */
+.split{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;align-items:center}
+.split img{display:block;width:100%;max-width:430px;height:auto;justify-self:center}
+.split-text h2{text-align:left}
+.split-text p{max-width:none}
 .split.reverse{grid-template-columns:1.2fr 1fr}
+@media(max-width:700px){.split,.split.reverse{grid-template-columns:1fr}}
