@@ -99,3 +99,4 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 .split-text h2{text-align:left}
 .split-text p{max-width:none}
 @media(max-width:700px){.split{grid-template-columns:1fr}}
+.split.reverse{grid-template-columns:1.2fr 1fr}
