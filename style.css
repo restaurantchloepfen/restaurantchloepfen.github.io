@@ -93,3 +93,4 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 .event-card:nth-child(2) img{border-color:var(--forest)}
 .event-card:nth-child(3) img{border-color:var(--brown)}
 .event-card p{margin-bottom:0}
+.section-title{font-size:clamp(2.4rem,6vw,3.6rem);color:var(--burgundy);text-align:cen
