@@ -117,6 +117,54 @@
         </div>
       </div>
     </section>
+ 
+
+    <!-- RESERVATION -->
+   <section id="reserve" class="reserve">
+      <div class="wrap">
+        <h2 class="section-title">Reserve a table</h2>
+        <p class="center-text">We look forward to your visit. Send us your request and we will confirm it by email or phone.</p>
+
+        <form class="reserve-form" action="mailto:info@chloepfen.ch" method="post" enctype="text/plain">
+          <label>Name
+            <input type="text" name="name" required>
+          </label>
+
+          <div class="row">
+            <label>Phone
+              <input type="tel" name="phone" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" required>
+            </label>
+          </div>
+
+          <div class="row">
+            <label>Date
+              <input type="date" name="date" required>
+            </label>
+            <label>Time
+              <input type="time" name="time" required>
+            </label>
+          </div>
+
+          <label>Number of guests
+            <select name="guests" required>
+              <option value="">Please choose</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+              <option>9 or more</option>
+            </select>
+          </label>
+
+          <label>Special wishes or occasion
+            <textarea name="wishes" rows="4" placeholder="Allergies, birthday, high chair, ..."></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send reservation request</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->
