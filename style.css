@@ -111,3 +111,15 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 
 .band .btn.alt{background:var(--cream);color:var(--oxblood);border-color:var(--cream)}
 .band .btn.alt:hover{background:transparent;color:var(--cream)}
+
+/* ===== RESERVATION: FOREST GREEN + CREAM ===== */
+.reserve{background:var(--forest);color:var(--cream)}
+.reserve .section-title{color:var(--cream)}
+.reserve a{color:var(--cream)}
+.reserve input,
+.reserve select,
+.reserve textarea{background:var(--cream);color:var(--forest);border:2px solid var(--cream)}
+.reserve ::placeholder{color:#6b8277}
+.reserve .btn{background:var(--cream);color:var(--forest);border:2px solid var(--cream)}
+.reserve .btn:hover{background:transparent;color:var(--cream)}
+.reserve :focus-visible{outline-color:var(--cream)}
