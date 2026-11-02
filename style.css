@@ -85,7 +85,8 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 /* ===== 10. BANNER ===== */
-.banner img{display:block;width:100%;height:clamp(200px,35vw,250px);object-fit:cover}
+.banner{padding:1.5rem 1.5rem 0}
+.banner img{display:block;width:100%;max-width:900px;height:auto;margin:0 auto}
 
 /* ===== EVENTS: THREE PICTURE CARDS ===== */
 .event-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
