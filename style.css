@@ -132,3 +132,11 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 /* ===== GREEN OUTLINE BUTTON ===== */
 .btn-green{display:inline-block;margin-top:.5rem;font-family:var(--font-title);font-size:1.1rem;text-transform:uppercase;letter-spacing:.2em;color:var(--forest);background:transparent;border:2px solid var(--forest);padding:.9rem 2.2rem;text-decoration:none}
 .btn-green:hover{background:var(--forest);color:var(--cream)}
+
+/* ===== FAMILIES: CARDS LEFT, PICTURE RIGHT ===== */
+.family-layout{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:center;margin-top:2rem}
+.family-layout .family-cards{grid-template-columns:repeat(2,1fr);margin-top:0}
+.family-layout > img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-bottom:4px solid var(--rose)}
+@media(max-width:700px){
+  .family-layout,.family-layout .family-cards{grid-template-columns:1fr}
+}
