@@ -123,3 +123,9 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 .reserve .btn{background:var(--cream);color:var(--forest);border:2px solid var(--cream)}
 .reserve .btn:hover{background:transparent;color:var(--cream)}
 .reserve :focus-visible{outline-color:var(--cream)}
+
+/* ===== GALLERY: THREE EQUAL PICTURES ===== */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.split.offer .gallery img{width:100%;max-width:none;aspect-ratio:1/1;object-fit:cover;border-bottom:4px solid var(--rose)}
+.split.offer .gallery img:nth-child(2){border-color:var(--forest)}
+.split.offer .gallery img:nth-child(3){border-color:var(--brown)}
