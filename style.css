@@ -143,4 +143,4 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 
 /* ===== GALLERY RESTAURANT TATARENHUT: THREE PICTURES ===== */
 .gallery.three{grid-template-columns:repeat(3,1fr)}
-.split.offer .gallery img:nth-child(3){border-color:var(--brown)}
+.split.offer .gallery.three img{aspect-ratio:3/4}
