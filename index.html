@@ -75,5 +75,35 @@
   <p>&copy; 2026 Chlöpfen · <a href="gtc.html">GTC</a></p>
   </footer>
 
-</body>
+  <!-- POPUP: REOPENING NOTICE -->
+  <dialog id="notice" class="notice" aria-labelledby="notice-title">
+    <button class="notice-close" id="notice-close" aria-label="Close">&times;</button>
+    <p class="kicker">Save the date</p>
+    <h2 id="notice-title">We reopen in April 2027</h2>
+    <p>Chlöpfen is getting ready for a new start. Follow us on Instagram or check back here for the exact opening date.</p>
+    <a class="btn" href="contact.html">Stay in touch</a>
+  </dialog>
+
+  <script>
+    (function(){
+      var box = document.getElementById('notice');
+      if(!box || typeof box.showModal !== 'function') return;
+
+      var seen = false;
+      try{ seen = sessionStorage.getItem('noticeSeen'); }catch(e){}
+      if(seen) return;
+
+      var hasIntro = document.documentElement.classList.contains('has-intro');
+      setTimeout(function(){ box.showModal(); }, hasIntro ? 3600 : 800);
+
+      function close(){
+        box.close();
+        try{ sessionStorage.setItem('noticeSeen','1'); }catch(e){}
+      }
+      document.getElementById('notice-close').addEventListener('click', close);
+      box.addEventListener('click', function(e){ if(e.target === box) close(); });
+      box.addEventListener('cancel', function(){ try{ sessionStorage.setItem('noticeSeen','1'); }catch(e){} });
+    })();
+  </script>
+  </body>
 </html>
