@@ -140,3 +140,8 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 @media(max-width:700px){
   .family-layout,.family-layout .family-cards{grid-template-columns:1fr}
 }
+
+/* ===== GALLERY RESTAURANT TATARENHUT: THREE PICTURES ===== */
+.gallery.three{grid-template-columns:repeat(3,1fr)}
+.split.offer .gallery img:nth-child(3){border-color:var(--brown)}
+.gallery.three{grid-template-columns:repeat(2,1fr)}
