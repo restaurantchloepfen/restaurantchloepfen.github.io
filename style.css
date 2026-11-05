@@ -148,3 +148,29 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 /* ===== GALLERY RESTAURANT TATARENHUT: THREE PICTURES ===== */
 .gallery.three{grid-template-columns:repeat(3,1fr)}
 .split.offer .gallery.three img{aspect-ratio:3/4}
+
+/* ===== TEAM: OPEN POSITIONS ===== */
+.jobs{margin-top:2rem}
+.job{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:1.4rem 0;border-bottom:1px solid var(--rose)}
+.job h3{margin-bottom:.2rem}
+.job p{margin-bottom:0}
+
+/* ===== TEAM: TIMELINE ===== */
+.timeline{position:relative;max-width:950px;margin:3rem auto 0}
+.timeline::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;background:var(--rose);transform:translateX(-50%)}
+.stop{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-bottom:3.5rem}
+.stop:last-child{margin-bottom:0}
+.stop::before{content:"";position:absolute;left:50%;top:50%;width:20px;height:20px;border-radius:50%;background:var(--cream);border:4px solid var(--rose);transform:translate(-50%,-50%)}
+.stop img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.stop:nth-child(even) .stop-text{order:-1;text-align:right}
+.stop:nth-child(even) .stop-text p{margin-left:auto}
+.year{font-family:var(--font-title);font-size:2.2rem;color:var(--rose);margin-bottom:0}
+.stop-text h3{margin-bottom:.4rem}
+
+@media(max-width:700px){
+  .job{flex-direction:column;align-items:flex-start}
+  .timeline::before,.stop::before{display:none}
+  .stop{grid-template-columns:1fr;gap:1rem}
+  .stop:nth-child(even) .stop-text{order:0;text-align:left}
+  .stop:nth-child(even) .stop-text p{margin-left:0}
+}
