@@ -177,6 +177,10 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
   .stop:nth-child(even) .stop-text p{margin-left:0}
 }
 
+.stop figure{margin:0}
+.stop figcaption{margin-top:.6rem;font-size:.95rem;font-style:italic;color:var(--rose);text-align:center}
+
+
 /* ===== POPUP NOTICE ===== */
 .notice{border:0;border-top:6px solid var(--rose);background:var(--cream);color:var(--oxblood);padding:2.5rem 2rem 2rem;max-width:min(520px,92vw);margin:auto;text-align:center;box-shadow:0 20px 60px rgba(76,32,38,.35)}
 .notice::backdrop{background:rgba(76,32,38,.65)}
