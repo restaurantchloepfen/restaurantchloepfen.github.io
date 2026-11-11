@@ -43,6 +43,8 @@ img{max-width:100%;height:auto}
 .btn.alt{background:transparent;color:var(--oxblood);border:2px solid var(--oxblood);margin-left:.6rem}
 .btn.alt:hover{background:var(--oxblood);color:var(--cream)}
 
+.wide-text{max-width:none}
+
 /* ===== 5. PAGE SECTIONS ===== */
 .page-title{background:var(--oxblood);color:var(--cream);text-align:center;padding:3.5rem 1.5rem}
 .page-title p{margin:.8rem auto 0;color:var(--rose)}
