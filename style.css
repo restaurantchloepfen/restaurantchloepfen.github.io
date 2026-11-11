@@ -180,6 +180,23 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 .stop figure{margin:0}
 .stop figcaption{margin-top:.6rem;font-size:.95rem;font-style:italic;color:var(--rose);text-align:center}
 
+/* ===== TEAM: WHO ARE WE ===== */
+.who-pictures{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem}
+.who-pictures figure{margin:0}
+.who-pictures img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-bottom:4px solid var(--rose)}
+.who-pictures .org img{object-fit:contain;background:#fff;border-bottom-color:var(--forest)}
+.who-pictures figcaption{margin-top:.6rem;text-align:center;font-style:italic;font-size:.95rem}
+
+/* ===== TEAM: FOUR PILLARS ===== */
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:2.5rem}
+.pillar{text-align:center;border-top:4px solid var(--rose);padding-top:1.2rem}
+.pillar:nth-child(2){border-color:var(--forest)}
+.pillar:nth-child(3){border-color:var(--brown)}
+.pillar:nth-child(4){border-color:var(--burgundy)}
+.pillar p{margin-left:auto;margin-right:auto}
+
+@media(max-width:900px){.pillars{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.who-pictures,.pillars{grid-template-columns:1fr}}
 
 /* ===== POPUP NOTICE ===== */
 .notice{border:0;border-top:6px solid var(--rose);background:var(--cream);color:var(--oxblood);padding:2.5rem 2rem 2rem;max-width:min(520px,92vw);margin:auto;text-align:center;box-shadow:0 20px 60px rgba(76,32,38,.35)}
