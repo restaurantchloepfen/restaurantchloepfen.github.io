@@ -35,24 +35,64 @@
       <h1>Contact</h1>
       <p>We would love to hear from you</p>
     </div>
+
+    <!-- TOP: MAP LEFT, INFO RIGHT -->
     <section>
-      <div class="wrap grid">
-        <div>
-          <h2>Find us</h2>
-       <a href="https://www.google.com/maps/place/Chl%C3%B6pfen+Spielplatz/@47.1142875,8.2919405,301m/data=!3m1!1e3!4m14!1m7!3m6!1s0x478ffd2143184e11:0x60bc151f59f52b87!2zQ2hsw7ZwZmVu!8m2!3d47.1237154!4d8.3082579!16s%2Fg%2F1tdq9hd2!3m5!1s0x478ffd214f000001:0xead5c4b0a8ea30fa!8m2!3d47.1139387!4d8.2906988!16s%2Fg%2F11xzhx3hs4?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener"> 
-         <img src="images/Map.png" alt="Map of Chlöpfen Restaurant, click to open in Google Maps"> 
-       </a>
-      <p>Chlöpfen is located between Eschenbach and Rothenburg. You can reach us by car, bike or by foot<br> 
-            The drive from Lucerne will take you ca. 15 minutes. Our restaurant offers free parking spaces for our guest
-      </p>
-          <h3>Opening hours</h3>
-          <p>REOPENING: 7TH OF APRIL 2027 <br>Monday & Tuesday: closed<br>Wednesday - Friday: 11:30 - 23:00 <br> Saturday & Sunday: 10:00-23:00<br> (Last order for the kitchen: 21:30)
-         <br> We are closed the whole month of February due to company holidays. </p>
+      <div class="wrap">
+        <div class="contact-top">
+
+          <!-- LEFT: MAP + STREET VIEW LINK -->
+          <div>
+            <h2>Find us</h2>
+
+            <!-- keep your existing map code with your own Google Maps link here -->
+            <a href="PASTE-YOUR-GOOGLE-MAPS-LINK" target="_blank" rel="noopener noreferrer">
+              <img src="images/Map.png" alt="Map of Chlöpfen Restaurant, click to open in Google Maps">
+            </a>
+            <p>Chlöpfen is located between Eschenbach and Rothenburg. You can reach us by car, bike or on foot. The drive from Lucerne takes about 15 minutes. Our restaurant offers parking spaces for our guests.</p>
+
+            <p class="credit">
+              <a href="https://www.google.com/maps/place/Chl%C3%B6pfen/@47.1137738,8.2914243,3a,90y,347.28h,71.7t/data=!3m8!1e1!3m6!1sCIHM0ogKEICAgIDO5oiUdA!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgpms-cs-s%2FAM4Q-U--N5TJ5ntleLL8tMNuYG-wBM4Fnwt6KH7_lS95QaZml0tIaF4d_wvwpMN4kr3DH2lL3vhn8h3KCTqBpKTzU8qAYARw4kADQz1HCZBdxUdaGO_IwCUap1XBvi_nyq7hjgtVwJEc%3Dw900-h600-k-no-pi18.302701238434054-ya81.10764122476371-ro0-fo100!7i7680!8i3840!4m7!3m6!1s0x478ffd2143184e11:0x60bc151f59f52b87!8m2!3d47.1237154!4d8.3082579!10e5!16s%2Fg%2F1tdq9hd2?entry=ttu&amp;g_ep=EgoyMDI2MTEwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Google Street View, [month year], [photographer name]</a><br>
+              (virtual tour – click the link)
+            </p>
+            <p class="credit">&copy; 2026</p>
+          </div>
+
+          <!-- RIGHT: OPENING HOURS, REOPENING, FLYER -->
+          <div>
+            <h2>Opening hours</h2>
+            <p>Tue – Sat: 11:00 – 23:00<br>
+            Sun &amp; Mon: closed</p>
+
+            <h3>We reopen on 7 April 2027</h3>
+            <p>Chlöpfen is getting ready for a new start. On Wednesday, 7 April, our doors are open from 4 pm until 7 pm. Come by for a glass of wine, meet the team and celebrate with us.</p>
+            <a class="btn-green" href="images/open-door-event.png" download="Chloepfen-Open-Door-Event.png">Download flyer</a>
+          </div>
+
         </div>
-        <form action="mailto:info@chloepfen.ch" method="post" enctype="text/plain">
-          <label>Name <input type="text" name="name" required></label>
-          <label>Email <input type="email" name="email" required></label>
-          <label>Message <textarea name="message" rows="5" required></textarea></label>
+      </div>
+    </section>
+
+    <!-- BOTTOM: CONTACT FORM (green) -->
+    <section class="reserve">
+      <div class="wrap">
+        <h2 class="section-title">Contact us</h2>
+        <p class="center-text">Questions, ideas or a request? Write to us and we will get back to you.</p>
+
+        <form class="reserve-form" action="mailto:info@chloepfen.ch" method="post" enctype="text/plain">
+          <label>Name
+            <input type="text" name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span>I agree that my details are used to answer my request.</span>
+          </label>
           <button class="btn" type="submit">Send message</button>
         </form>
       </div>
