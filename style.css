@@ -220,3 +220,4 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 .reserve .consent{display:flex;align-items:flex-start;gap:.7rem;font-family:var(--font-text);font-size:.95rem}
 .reserve .consent input{width:auto;margin-top:.35rem}
 @media(max-width:800px){.contact-top{grid-template-columns:1fr}}
+.credit{font-size:.95rem;margin-top:1.5rem}
