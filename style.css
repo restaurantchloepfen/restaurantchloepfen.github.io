@@ -114,6 +114,9 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 .band .btn.alt{background:var(--cream);color:var(--oxblood);border-color:var(--cream)}
 .band .btn.alt:hover{background:transparent;color:var(--cream)}
 
+.reserve .consent{display:flex;align-items:flex-start;gap:.7rem;font-family:var(--font-text);font-size:.95rem}
+.reserve .consent input{width:auto;margin-top:.35rem}
+
 /* ===== RESERVATION: FOREST GREEN + CREAM ===== */
 .reserve{background:var(--forest);color:var(--cream)}
 .reserve .section-title{color:var(--cream)}
