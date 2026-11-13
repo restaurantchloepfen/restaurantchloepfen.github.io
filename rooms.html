@@ -41,7 +41,10 @@
         <p class="center-text">
           On the first floor of Chlöpfen we rent out rooms for offices, creative spaces and private use.
           <br>
-          Write two or three sentences here about size, equipment, availability and rental periods.
+          Our Rooms are between 21m2 to 23m2. They can be rented in longterm agreements for CHF 700 per month/room.
+        <Br>
+          Interested? Fill out the 
+          
         </p>
       </div>
     </section>
@@ -67,17 +70,17 @@
       <div class="wrap">
         <div class="event-cards">
           <article class="event-card">
-            <img src="images/room-office.jpg" alt="Office room">
+            <img src="images/Room 1.png" alt="Office room">
             <h3>Room "Edelweiss"</h3>
             <p>Quiet rooms for your team or for working alone.</p>
           </article>
           <article class="event-card">
-            <img src="images/room-creative.jpg" alt="Creative space">
+            <img src="images/Room 2.png" alt="Creative space">
             <h3>Room "Daisy"</h3>
             <p>Bright rooms for studios, workshops and projects.</p>
           </article>
           <article class="event-card">
-            <img src="images/room-private.jpg" alt="Private room">
+            <img src="images/Room 2.png" alt="Private room">
             <h3>Room "Rose"</h3>
             <p>Rooms for hobbies, courses or small groups.</p>
           </article>
@@ -85,18 +88,51 @@
       </div>
     </section>
 
-    <!-- PDF AT THE BOTTOM -->
-    <section class="band">
+<!-- ROOM ENQUIRY (green) -->
+    <section class="reserve" id="enquiry">
       <div class="wrap">
-        <h2>Room information</h2>
-        <p>Floor plans, sizes and prices in one PDF.</p>
-        <p>
-          <a class="btn alt" href="pdf/rooms.pdf" download>Download the PDF</a>
-        </p>
+        <h2 class="section-title">Interested in a room?</h2>
+        <p class="center-text">Tell us which room you like and we will get back to you with details and a viewing appointment.</p>
+
+        <form class="reserve-form" action="mailto:info@chloepfen.ch" method="post" enctype="text/plain">
+          <label>Name
+            <input type="text" name="name" required>
+          </label>
+
+          <div class="row">
+            <label>Email
+              <input type="email" name="email" required>
+            </label>
+            <label>Phone
+              <input type="tel" name="phone">
+            </label>
+          </div>
+
+          <label>Which room are you interested in?
+            <select name="room" required>
+              <option value="">Please choose</option>
+              <option>Room Edelweiss</option>
+              <option>Room Daisy</option>
+              <option>Room Rose</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+
+          <label>Your message
+            <textarea name="message" rows="4" placeholder="What would you like to use the room for? When would you like to start?"></textarea>
+          </label>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span>I agree that my details are used to answer my request.</span>
+          </label>
+
+          <button class="btn" type="submit">Send enquiry</button>
+        </form>
       </div>
     </section>
   </main>
-
+  
    <!-- FOOTER -->
   <footer class="site-footer">
     <p class="name">Restaurant Chlöpfen</p>
