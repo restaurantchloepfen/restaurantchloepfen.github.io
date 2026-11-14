@@ -231,3 +231,12 @@ input,select,textarea{font:inherit;padding:.7rem;border:1.5px solid var(--oxbloo
 }
 
 .btn-green,.btn-cream{display:block;max-width:320px;margin:.9rem auto;text-align:center}
+
+/* ===== PHONE: SIDE SPACING ===== */
+@media(max-width:800px){
+  section{padding-left:1.5rem;padding-right:1.5rem}
+  .contact-grid{grid-template-columns:minmax(0,1fr);gap:2rem}
+  .contact-left,.contact-right{min-width:0;text-align:center}
+  .contact-left img{max-width:100%;margin:0 auto}
+  .contact-right p,.credit{margin-left:auto;margin-right:auto;overflow-wrap:anywhere}
+}
